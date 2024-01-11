@@ -1105,6 +1105,10 @@ github.com/eclipse/paho.mqtt.golang v1.4.3 h1:2kwcUGn8seMUfWndX0hGbvH8r7crgcJguQ
 github.com/eclipse/paho.mqtt.golang v1.4.3/go.mod h1:CSYvoAlsMkhYOXh/oKyxa8EcBci6dVkLCbo5tTC1RIE=
 github.com/emicklei/go-restful/v3 v3.10.2 h1:hIovbnmBTLjHXkqEBUz3HGpXZdM7ZrE9fJIZIqlJLqE=
 github.com/emicklei/go-restful/v3 v3.10.2/go.mod h1:6n3XBCmQQb25CM2LCACGz8ukIrRry+4bhvbpWn3mrbc=
+github.com/emilvonck/fortios-go v0.0.0-20240108091405-abbd4cf0da5d h1:hOdaVpojLgH2C70sunRWeHj9O4daLQ54BPP/GknVAyk=
+github.com/emilvonck/fortios-go v0.0.0-20240108091405-abbd4cf0da5d/go.mod h1:2D5UyPEagP3T4trrpqmx0jee3fenwhwMoKYviXVeZxQ=
+github.com/emilvonck/fortios-go v0.0.0-20240108143638-339333c8c409 h1:vHpqMc4+EdzgzEM5R7djIfsW3OsQnbLma1HccmguRLA=
+github.com/emilvonck/fortios-go v0.0.0-20240108143638-339333c8c409/go.mod h1:2D5UyPEagP3T4trrpqmx0jee3fenwhwMoKYviXVeZxQ=
 github.com/envoyproxy/go-control-plane v0.9.0/go.mod h1:YTl/9mNaCwkRvm6d1a2C3ymFceY/DCBVvsKhRF0iEA4=
 github.com/envoyproxy/go-control-plane v0.9.1-0.20191026205805-5f8ba28d4473/go.mod h1:YTl/9mNaCwkRvm6d1a2C3ymFceY/DCBVvsKhRF0iEA4=
 github.com/envoyproxy/go-control-plane v0.9.4/go.mod h1:6rpuAdCZL397s3pYoYcLgu1mIlRU8Am5FuJP05cCM98=

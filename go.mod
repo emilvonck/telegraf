@@ -1,6 +1,6 @@
 module github.com/influxdata/telegraf
 
-go 1.21
+go 1.21.0
 
 require (
 	cloud.google.com/go/bigquery v1.57.1
@@ -221,6 +221,8 @@ require (
 	layeh.com/radius v0.0.0-20221205141417-e7fbddd11d68
 	modernc.org/sqlite v1.24.0
 )
+
+require github.com/emilvonck/fortios-go v0.0.0-20240108143638-339333c8c409 // indirect
 
 require (
 	cloud.google.com/go v0.110.8 // indirect
