@@ -56,8 +56,10 @@ type Probes func(*Fortigate, context.Context, telegraf.Accumulator) error
 
 func (f *Fortigate) Gather(acc telegraf.Accumulator) error {
 	functionMap := map[string]Probes{
-		"managed_ap":  (*Fortigate).GetManagedAp,
-		"wifi_client": (*Fortigate).GetWiFiClients,
+		"wifi_managed_ap":          (*Fortigate).GetManagedAp,
+		"wifi_client":              (*Fortigate).GetWiFiClients,
+		"system_status":            (*Fortigate).GetSystemStatus,
+		"system_running_processes": (*Fortigate).GetSystemRunningProcesses,
 		// Add more functions to the map as needed
 	}
 	ctx := context.Background()

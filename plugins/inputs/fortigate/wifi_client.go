@@ -103,7 +103,7 @@ func (f *Fortigate) GetWiFiClients(ctx context.Context, acc telegraf.Accumulator
 		return err
 	}
 	for _, wClient := range res.Results {
-		acc.AddFields(res.Path+res.Name, map[string]interface{}{
+		acc.AddFields(fmt.Sprintf("%s_%s", res.Path, res.Name), map[string]interface{}{
 			"ip":       wClient.IP,
 			"rssi":     wClient.Signal,
 			"snr":      wClient.Snr,

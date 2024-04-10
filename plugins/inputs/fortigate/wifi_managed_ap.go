@@ -104,7 +104,7 @@ func (f *Fortigate) GetManagedAp(ctx context.Context, acc telegraf.Accumulator) 
 	}
 
 	for _, aP := range res.Results {
-		acc.AddFields(fmt.Sprintf("%s_%s_stats", res.Path, res.Name), map[string]interface{}{
+		acc.AddFields(fmt.Sprintf("%s_%s", res.Path, res.Name), map[string]interface{}{
 			"ap_profile":              aP.ApProfile,
 			"ble_profile":             aP.BleProfile,
 			"state":                   aP.State,
@@ -134,7 +134,7 @@ func (f *Fortigate) GetManagedAp(ctx context.Context, acc telegraf.Accumulator) 
 			"vdom":       res.Vdom,
 		})
 		for _, aPRadio := range aP.Radio {
-			acc.AddFields(fmt.Sprintf("%s_%s_radio_stats", res.Path, res.Name), map[string]interface{}{
+			acc.AddFields(fmt.Sprintf("%s_%s_radio", res.Path, res.Name), map[string]interface{}{
 				"detected_rogue_aps":             aPRadio.DetectedRogueAps,
 				"detected_rogue_infra_aps":       aPRadio.DetectedRogueInfraAps,
 				"client_count":                   aPRadio.ClientCount,
