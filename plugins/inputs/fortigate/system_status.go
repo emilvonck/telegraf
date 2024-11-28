@@ -37,6 +37,7 @@ func (f *Fortigate) GetSystemStatus(ctx context.Context, acc telegraf.Accumulato
 		"model":               res.Results.Model,
 		"log_disk_status":     res.Results.LogDiskStatus,
 		"configured_hostname": res.Results.Hostname,
+		"version":             res.Version,
 	}, map[string]string{
 		"fgt_serial": res.Serial,
 		"vdom":       res.Vdom,
